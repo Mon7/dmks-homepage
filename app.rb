@@ -31,6 +31,9 @@ configure :development do
 end
 
 before do 
+  if request.host == 'dmks.se'
+    halt redirect "http://www.dmks.se#{request.path}"
+  end
 	content_type :html, :charset => 'utf-8'
 	@title = "DMKS - Digitalt medlems kort system"
 	@menu = [
