@@ -32,7 +32,7 @@ end
 
 before do 
   if request.host == 'dmks.se'
-    halt redirect "http://www.dmks.se#{request.path}"
+    halt redirect "http://www.dmks.se#{request.path}", 301
   end
 	content_type :html, :charset => 'utf-8'
 	@title = "DMKS - Digitalt medlems kort system"
