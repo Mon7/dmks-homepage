@@ -25,7 +25,7 @@
     %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js", :type => "text/javascript"}
     %script{:src => "/js/slider/js/jquery.anythingslider.min.js"}
     %script{:src => "/js/init.js", :type => "text/javascript"}
-    %script{:async => "", :src => "http://www.google-analytics.com/ga.js", :type => "text/javascript"}  
+    %script{:async => "", :src => "http://www.google-analytics.com/ga.js", :type => "text/javascript"}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-18633595-3']);
@@ -74,43 +74,10 @@
                   %input{:type => "hidden",:name => "subject",:value => "[DMKS callme request]"}
                   %button{:type => "submit"}
                     Kontakta mig!
-          .row#twitter
-            .twelvecol.last
-              %script{:src => "http://widgets.twimg.com/j/2/widget.js"}
-              :javascript
-                new TWTR.Widget({
-                  version: 2,
-                  type: 'profile',
-                  rpp: 5,
-                  interval: 6000,
-                  width: 'auto',
-                  height: 254,
-                  theme: {
-                    shell: {
-                      background: '#cecece',
-                      color: '#ff5533'
-                    },
-                    tweets: {
-                      background: '#ffffff',
-                      color: '#333',
-                      links: '#ff5533'
-                    }
-                  },
-                  features: {
-                    scrollbar: true,
-                    loop: true,
-                    live: true,
-                    hashtags: true,
-                    timestamp: false,
-                    avatars: false,
-                    behavior: 'default'
-                  }
-                }).render().setUser('dmks_mon7').start();
-
     .container#ft
       .row
         .twelvecol
-          %p 
-            Utvecklat av 
+          %p
+            Utvecklat av
             %a{:href => 'http://www.mon7.se'}
               Mon7 Consulting AB
