@@ -1,5 +1,7 @@
 # dmks-homepage
 
+**Note**: The Heroku app was removed 2016-04-25.
+
 http://www.dmks.nu
 
 ## Development
